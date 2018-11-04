@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Project</title>
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	<nav class="navbar navbar-inverse">
+  		<div class="container-fluid">
+    		<div class="navbar-header">
+      			<a class="navbar-brand" href="#">Lagrange Points</a>
+    		</div>
+    		<ul class="nav navbar-nav">
+      			<li class="active"><a href="Lagrange_Points.html">Home</a></li>
+            <li><a href="point1.html">Point L1</a></li>
+            <li><a href="point2.html">Point L2</a></li>
+            <li><a href="point3.html">Point L3</a></li>
+            <li><a href="point4.html">Point L4</a></li>
+            <li><a href="point5.html">Point L5</a></li>
+    		</ul>
+  		</div>
+	</nav>
+
+	<div class="container">
+		<div class="row">
+			<div class="col-md-9">
+				<canvas id="bg_canvas" width='850' height="600"></canvas>
+				<canvas id="main_canvas" width='850' height='600'></canvas>
+			</div>
+
+			<div class="col-md-3">
+				<form action="/action_page.php">
+  					<div class="form-group">
+    					<label for="sun">Sun's mass:</label>
+    					<input type="text" class="form-control" id="sun" value='2500'>
+  					</div>
+  					<div class="form-group">
+    					<label for="earth">Earth's mass:</label>
+    					<input type="text" class="form-control" id="earth" value='100'>
+  					</div>
+  					<div class="form-group">
+    					<label for="distance">Distance:</label>
+    					<input type="text" class="form-control" id="distance" value='200'>
+  					</div>
+  					<div class="form-group">
+    					<label for="G">G-constant:</label>
+    					<input type="text" class="form-control" id="G" value='1000'>
+  					</div>
+  					<button id='start_anim' class="btn btn-success">Animate</button>
+  					<button id='stop_anim' class="btn btn-danger">Stop</button>
+  					<button id='reset_anim' class="btn btn-info">Reset</button>
+				</form>
+			</div>
+		</div>
+	</div>
+
+	
+
+	<script src="js/jquery.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/vector2D.js"></script>
+	<script src="js/ball.js"></script>
+	<script src="js/forces.js"></script>
+	<script src="js/l4.js"></script>
+</body>
+</html>

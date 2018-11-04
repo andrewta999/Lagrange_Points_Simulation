@@ -1,0 +1,13 @@
+#main_canvas{
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	background-color: transparent;
+}
+
+#bg_canvas{
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	background-color: #000000;
+}
